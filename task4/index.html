@@ -2,11 +2,28 @@
 <html>
 <head>
   <title>Task 4</title>
-</head>
-<body>
-  <h2>Web Dev Lab – Task 4</h2>
-  <p>Task 4 content goes here.</p>
 
+  <style>
+    .dot {
+      fill: deepskyblue;
+      animation: moveX 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes moveX {
+      from { transform: translateX(0); }
+      to { transform: translateX(200px); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <svg width="300" height="100">
+    <circle class="dot" cx="50" cy="50" r="30" />
+  </svg>
+
+  <br><br>
   <a href="../index.html">⬅ Back to Main Page</a>
+
 </body>
 </html>
