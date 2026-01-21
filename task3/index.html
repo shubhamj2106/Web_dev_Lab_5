@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Task 3</title>
+<style>
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+.triangle {
+width: 100px;
+height: 100px;
+background-color: red;
+clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+animation: myRotation 3s linear infinite;
+}
+@keyframes myRotation {
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(360deg);
+}
+}
+</style>
 </head>
 <body>
-  <h2>Web Dev Lab – Task 3</h2>
-  <p>Task 3 content goes here.</p>
-
-  <a href="../index.html">⬅ Back to Main Page</a>
+<div class="triangle"></div>
 </body>
 </html>
