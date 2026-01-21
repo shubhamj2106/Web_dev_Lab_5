@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Task 5</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    .object {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      animation: move 2s infinite alternate, morph 2s infinite alternate, color 3s infinite;
+    }
+
+    @keyframes move {
+      from { transform: translateX(-100px); }
+      to { transform: translateX(100px); }
+    }
+
+   @keyframes morph {
+      from { border-radius: 0%; }
+      to { border-radius: 50%; }
+      }
+      @keyframes color {
+      0% { background-color: blue; }
+      50% { background-color: green; }
+      100% { background-color: blue; }
+      }
+  </style>
 </head>
 <body>
-  <h2>Web Dev Lab – Task 5</h2>
-  <p>Task 5 content goes here.</p>
-
-  <a href="../index.html">⬅ Back to Main Page</a>
+  <div class="object"></div>
 </body>
 </html>
